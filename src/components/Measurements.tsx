@@ -12,7 +12,6 @@ const stats = [
 
 const contact = [
   { label: "Email", value: "sebastiano.nicoras@gmail.com", href: "mailto:sebastiano.nicoras@gmail.com" },
-  { label: "Phone", value: "+40 751 978 482", href: "tel:+40751978482" },
   { label: "Instagram", value: "@sebastiano.nicoras", href: "https://instagram.com/sebastiano.nicoras" },
 ];
 
