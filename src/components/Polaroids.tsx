@@ -4,8 +4,6 @@ const polaroids = [
   "RBV_4872.jpg",
   "RBV_4860.jpg",
   "RBV_4862.jpg",
-  "RBV_4896.jpg",
-  "RBV_4864.jpg",
   "RBV_4895.jpg",
   "RBV_4897.jpg",
   "RBV_4867.jpg",
