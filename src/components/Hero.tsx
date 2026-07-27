@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-[#faf9f7] flex flex-col items-center justify-center px-6" style={{ paddingTop: "80px", paddingBottom: "64px" }}>
+    <section className="min-h-screen bg-[#faf9f7] flex flex-col items-center justify-center px-6" style={{ paddingTop: "80px", paddingBottom: "160px" }}>
       <h1
         className="text-center tracking-[0.25em] text-5xl md:text-7xl"
         style={{ fontFamily: "var(--font-cormorant)" }}

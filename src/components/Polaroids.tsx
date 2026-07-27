@@ -16,9 +16,9 @@ export default function Polaroids() {
   const allImages = polaroids.map((img) => `/polaroids/${img}`);
 
   return (
-    <section id="polaroids" className="w-full bg-white py-16 md:py-32">
+    <section id="polaroids" className="w-full bg-white" style={{ paddingTop: "160px", paddingBottom: "160px" }}>
       <div className="px-6" style={{ maxWidth: "1152px", marginLeft: "auto", marginRight: "auto" }}>
-        <h2 className="mb-12 md:mb-20 text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]" style={{ fontFamily: "var(--font-cormorant)" }}>POLAROIDS</h2>
+        <h2 className="text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]" style={{ fontFamily: "var(--font-cormorant)", marginBottom: "80px" }}>POLAROIDS</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4" style={{ gap: "24px" }}>
           {polaroids.map((src, i) => (
