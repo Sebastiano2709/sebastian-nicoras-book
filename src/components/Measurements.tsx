@@ -26,11 +26,11 @@ export default function Measurements() {
           SEBASTIANO NICORAS
         </h2>
 
-        <div className="flex flex-wrap justify-center" style={{ rowGap: "12px", columnGap: "28px" }}>
+        <div className="flex flex-wrap justify-center" style={{ rowGap: "10px", columnGap: "20px" }}>
           {stats.map((s) => (
-            <p key={s.label} className="text-xs md:text-sm tracking-[0.05em] whitespace-nowrap">
+            <p key={s.label} className="whitespace-nowrap" style={{ fontSize: "12px", letterSpacing: "0.02em" }}>
               <span className="text-neutral-400 uppercase">{s.label} </span>
-              <span className="text-neutral-900">{s.value}</span>
+              <span className="text-neutral-900 font-semibold">{s.value}</span>
             </p>
           ))}
         </div>
