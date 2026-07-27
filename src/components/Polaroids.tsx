@@ -14,7 +14,7 @@ export default function Polaroids() {
 
   return (
     <section id="polaroids" className="w-full">
-      <div className="grid grid-cols-2 md:grid-cols-4" style={{ gap: "12px" }}>
+      <div className="grid grid-cols-2" style={{ gap: "12px", maxWidth: "800px", marginLeft: "auto", marginRight: "auto" }}>
         {polaroids.map((src, i) => (
           <LightboxTrigger key={src} images={allImages} index={i}>
             <div className="aspect-[3/4] overflow-hidden bg-neutral-100">
