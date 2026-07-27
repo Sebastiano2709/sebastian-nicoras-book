@@ -1,109 +1,47 @@
-import Image from "next/image";
 import { portfolio } from "@/data/portfolio";
 import { LightboxTrigger } from "@/components/Lightbox";
-
-const sectionStyle: React.CSSProperties = {
-  maxWidth: "860px",
-  margin: "0 auto",
-  padding: "128px 24px",
-};
-
-const headingStyle: React.CSSProperties = {
-  textAlign: "center",
-  fontSize: "3rem",
-  letterSpacing: "0.3em",
-  marginBottom: "5rem",
-  fontFamily: "var(--font-cormorant)",
-};
-
-const bigImgStyle: React.CSSProperties = {
-  display: "block",
-  width: "100%",
-  maxWidth: "100%",
-  height: "auto",
-  marginBottom: "2rem",
-};
-
-const gridStyle: React.CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gap: "2rem",
-  marginBottom: "2rem",
-};
-
-const gridStyle3: React.CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr 1fr",
-  gap: "2rem",
-};
-
-const gridImgStyle: React.CSSProperties = {
-  display: "block",
-  width: "100%",
-  maxWidth: "100%",
-  height: "auto",
-};
 
 export default function SelectedWork() {
   const allImages = portfolio.map((img) => `/portfolio/${img}`);
 
+  const first = allImages[0];
+  const second = allImages.slice(1, 3);
+  const third = allImages[3];
+  const fourth = allImages.slice(4, 6);
+  const fifth = allImages[6];
+  const rest = allImages.slice(7);
+
   return (
-    <section id="selected-work" style={sectionStyle}>
-      <h2 style={headingStyle}>SELECTED WORK</h2>
+    <section id="portfolio" className="w-full px-4 md:px-12 py-12 md:py-20 max-w-6xl mx-auto">
+      <h2 className="text-2xl md:text-4xl font-serif mb-8 md:mb-14 text-center">Selected Work</h2>
 
-      <LightboxTrigger images={allImages} index={0}>
-        <Image
-          src={`/portfolio/${portfolio[0]}`}
-          alt=""
-          width={1400}
-          height={1800}
-          style={bigImgStyle}
-        />
-      </LightboxTrigger>
-
-      <div style={gridStyle}>
-        <LightboxTrigger images={allImages} index={1}>
-          <Image src={`/portfolio/${portfolio[1]}`} alt="" width={700} height={1000} style={gridImgStyle} />
-        </LightboxTrigger>
-        <LightboxTrigger images={allImages} index={2}>
-          <Image src={`/portfolio/${portfolio[2]}`} alt="" width={700} height={1000} style={gridImgStyle} />
-        </LightboxTrigger>
+      <div className="mb-6 md:mb-10">
+        <LightboxTrigger images={allImages} index={0}><img src={first} alt="" className="w-full h-auto object-cover" /></LightboxTrigger>
       </div>
 
-      <LightboxTrigger images={allImages} index={3}>
-        <Image
-          src={`/portfolio/${portfolio[3]}`}
-          alt=""
-          width={1400}
-          height={1800}
-          style={bigImgStyle}
-        />
-      </LightboxTrigger>
-
-      <div style={gridStyle}>
-        <LightboxTrigger images={allImages} index={4}>
-          <Image src={`/portfolio/${portfolio[4]}`} alt="" width={700} height={1000} style={gridImgStyle} />
-        </LightboxTrigger>
-        <LightboxTrigger images={allImages} index={5}>
-          <Image src={`/portfolio/${portfolio[5]}`} alt="" width={700} height={1000} style={gridImgStyle} />
-        </LightboxTrigger>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 mb-6 md:mb-10">
+        {second.map((src, i) => (
+          <LightboxTrigger key={src} images={allImages} index={i + 1}><img src={src} alt="" className="w-full h-auto object-cover" /></LightboxTrigger>
+        ))}
       </div>
 
-      <LightboxTrigger images={allImages} index={6}>
-        <Image
-          src={`/portfolio/${portfolio[6]}`}
-          alt=""
-          width={1400}
-          height={1800}
-          style={bigImgStyle}
-        />
-      </LightboxTrigger>
+      <div className="mb-6 md:mb-10">
+        <LightboxTrigger images={allImages} index={3}><img src={third} alt="" className="w-full h-auto object-cover" /></LightboxTrigger>
+      </div>
 
-      <div style={gridStyle3}>
-        {portfolio.slice(7).map((image, i) => (
-          <LightboxTrigger key={image} images={allImages} index={7 + i}>
-            <Image src={`/portfolio/${image}`} alt="" width={700} height={1000} style={gridImgStyle} />
-          </LightboxTrigger>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 mb-6 md:mb-10">
+        {fourth.map((src, i) => (
+          <LightboxTrigger key={src} images={allImages} index={i + 4}><img src={src} alt="" className="w-full h-auto object-cover" /></LightboxTrigger>
+        ))}
+      </div>
+
+      <div className="mb-6 md:mb-10">
+        <LightboxTrigger images={allImages} index={6}><img src={fifth} alt="" className="w-full h-auto object-cover" /></LightboxTrigger>
+      </div>
+
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-6">
+        {rest.map((src, i) => (
+          <LightboxTrigger key={src} images={allImages} index={i + 7}><img src={src} alt="" className="w-full h-auto object-cover" /></LightboxTrigger>
         ))}
       </div>
     </section>

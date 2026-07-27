@@ -12,64 +12,19 @@ const polaroids = [
   "RBV_4867.jpg",
 ];
 
-const sectionStyle: React.CSSProperties = {
-  width: "100%",
-  background: "#ffffff",
-  padding: "128px 0",
-};
-
-const innerStyle: React.CSSProperties = {
-  maxWidth: "1152px",
-  margin: "0 auto",
-  padding: "0 24px",
-};
-
-const headingStyle: React.CSSProperties = {
-  marginBottom: "5rem",
-  textAlign: "center",
-  fontSize: "3rem",
-  letterSpacing: "0.35em",
-  fontFamily: "var(--font-cormorant)",
-};
-
-const gridStyle: React.CSSProperties = {
-  display: "grid",
-  gridTemplateColumns: "repeat(4, 1fr)",
-  gap: "1.5rem",
-};
-
-const frameStyle: React.CSSProperties = {
-  overflow: "hidden",
-  background: "#f5f5f5",
-};
-
-const imgStyle: React.CSSProperties = {
-  display: "block",
-  width: "100%",
-  height: "auto",
-  objectFit: "cover",
-  transition: "transform 0.5s",
-};
-
 export default function Polaroids() {
   const allImages = polaroids.map((img) => `/polaroids/${img}`);
 
   return (
-    <section id="polaroids" style={sectionStyle}>
-      <div style={innerStyle}>
-        <h2 style={headingStyle}>POLAROIDS</h2>
+    <section id="polaroids" className="w-full bg-white py-16 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        <h2 className="mb-12 md:mb-20 text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]" style={{ fontFamily: "var(--font-cormorant)" }}>POLAROIDS</h2>
 
-        <div style={gridStyle}>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
           {polaroids.map((src, i) => (
             <LightboxTrigger key={src} images={allImages} index={i}>
-              <div style={frameStyle}>
-                <Image
-                  src={`/polaroids/${src}`}
-                  alt=""
-                  width={700}
-                  height={1000}
-                  style={imgStyle}
-                />
+              <div className="overflow-hidden bg-neutral-100">
+                <Image src={`/polaroids/${src}`} alt="" width={700} height={1000} className="block w-full h-auto object-cover transition-transform duration-500" />
               </div>
             </LightboxTrigger>
           ))}
