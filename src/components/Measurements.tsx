@@ -18,7 +18,7 @@ const contact = [
 
 export default function Measurements() {
   return (
-    <section id="measurements" className="w-full bg-white pt-16 pb-48 md:pt-32 md:pb-56">
+    <section id="measurements" className="w-full bg-white pt-16 pb-56 md:pt-32 md:pb-64">
       <div className="px-8 md:px-6" style={{ maxWidth: "768px", marginLeft: "auto", marginRight: "auto" }}>
         <h2
           className="mb-16 md:mb-20 text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]"
@@ -41,7 +41,7 @@ export default function Measurements() {
           ))}
         </div>
 
-        <div id="contact" className="mt-16 md:mt-24 flex flex-col items-center gap-3">
+        <div id="contact" className="mt-24 md:mt-32 flex flex-col items-center gap-4">
           {contact.map((c) => (
             <a key={c.label} href={c.href} className="text-xs md:text-sm tracking-[0.1em] md:tracking-[0.15em] text-neutral-600 text-center break-all" target={c.label === "Instagram" ? "_blank" : undefined} rel={c.label === "Instagram" ? "noopener noreferrer" : undefined}>
               <span className="text-neutral-400">{c.label.toUpperCase()} — </span>
@@ -49,7 +49,7 @@ export default function Measurements() {
             </a>
           ))}
 
-          <a href="/Sebastian_Nicoras_CompCard.pdf" download className="mt-5 inline-block border border-black px-6 py-3 text-[10px] md:text-xs tracking-[0.15em] md:tracking-[0.2em] uppercase text-black text-center">
+          <a href="/Sebastian_Nicoras_CompCard.pdf" download className="mt-8 inline-block border border-black px-6 py-3 text-[10px] md:text-xs tracking-[0.15em] md:tracking-[0.2em] uppercase text-black text-center">
             Download Comp Card (PDF)
           </a>
         </div>
