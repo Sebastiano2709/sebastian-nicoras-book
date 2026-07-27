@@ -4,8 +4,8 @@ const stats = [
   { label: "Chest", value: "99 cm / 39\"" },
   { label: "Waist", value: "81 cm / 31.5\"" },
   { label: "Hips", value: "95 cm / 37\"" },
-  { label: "Shoes", value: "42 EU / 9–9.5 US" },
   { label: "Suit", value: "50 EU" },
+  { label: "Shoes", value: "42 EU / 9–9.5 US" },
   { label: "Eyes", value: "Brown" },
   { label: "Hair", value: "Black" },
 ];
