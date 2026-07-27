@@ -21,7 +21,7 @@ export default function Measurements() {
     <section id="measurements" className="w-full bg-white pt-16 pb-32 md:pt-32 md:pb-40">
       <div className="mx-auto max-w-3xl px-8 md:px-6">
         <h2
-          className="mb-8 md:mb-10 text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]"
+          className="mb-16 md:mb-20 text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]"
           style={{ fontFamily: "var(--font-cormorant)" }}
         >
           SEBASTIAN NICORAS
