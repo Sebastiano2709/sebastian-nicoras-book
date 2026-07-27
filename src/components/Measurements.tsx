@@ -18,19 +18,19 @@ const contact = [
 
 export default function Measurements() {
   return (
-    <section id="measurements" className="w-full bg-white pt-16 pb-56 md:pt-32 md:pb-64">
+    <section id="measurements" className="w-full bg-white" style={{ paddingTop: "64px", paddingBottom: "220px" }}>
       <div className="px-8 md:px-6" style={{ maxWidth: "768px", marginLeft: "auto", marginRight: "auto" }}>
         <h2
-          className="mb-16 md:mb-20 text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]"
-          style={{ fontFamily: "var(--font-cormorant)" }}
+          className="text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]"
+          style={{ fontFamily: "var(--font-cormorant)", marginBottom: "64px" }}
         >
           SEBASTIAN NICORAS
         </h2>
-        <p className="mb-20 md:mb-28 text-center text-xs tracking-[0.3em] text-neutral-400">
+        <p className="text-center text-xs tracking-[0.3em] text-neutral-400" style={{ marginBottom: "80px" }}>
           MEASUREMENTS
         </p>
 
-        <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 md:gap-x-12 md:gap-y-8 text-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 text-center" style={{ columnGap: "24px", rowGap: "40px" }}>
           {stats.map((s) => (
             <div key={s.label} className="border-b border-neutral-200 pb-3">
               <p className="text-[10px] md:text-[11px] tracking-[0.2em] md:tracking-[0.25em] text-neutral-400">
@@ -41,7 +41,7 @@ export default function Measurements() {
           ))}
         </div>
 
-        <div id="contact" className="mt-24 md:mt-32 flex flex-col items-center gap-4">
+        <div id="contact" className="flex flex-col items-center" style={{ marginTop: "96px", gap: "16px" }}>
           {contact.map((c) => (
             <a key={c.label} href={c.href} className="text-xs md:text-sm tracking-[0.1em] md:tracking-[0.15em] text-neutral-600 text-center break-all" target={c.label === "Instagram" ? "_blank" : undefined} rel={c.label === "Instagram" ? "noopener noreferrer" : undefined}>
               <span className="text-neutral-400">{c.label.toUpperCase()} — </span>
@@ -49,7 +49,7 @@ export default function Measurements() {
             </a>
           ))}
 
-          <a href="/Sebastian_Nicoras_CompCard.pdf" download className="mt-8 inline-block border border-black px-6 py-3 text-[10px] md:text-xs tracking-[0.15em] md:tracking-[0.2em] uppercase text-black text-center">
+          <a href="/Sebastian_Nicoras_CompCard.pdf" download className="inline-block border border-black px-6 py-3 text-[10px] md:text-xs tracking-[0.15em] md:tracking-[0.2em] uppercase text-black text-center" style={{ marginTop: "32px" }}>
             Download Comp Card (PDF)
           </a>
         </div>
