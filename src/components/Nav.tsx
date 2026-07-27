@@ -32,8 +32,8 @@ export default function Nav() {
         zIndex: 100,
         paddingTop: scrolled ? "10px" : "18px",
         paddingBottom: scrolled ? "10px" : "18px",
-        background: scrolled ? "rgba(250, 249, 247, 0.9)" : "transparent",
-        backdropFilter: scrolled ? "blur(8px)" : "none",
+        background: "rgba(250, 249, 247, 0.92)",
+        backdropFilter: "blur(8px)",
         borderBottom: scrolled ? "1px solid #e5e2da" : "1px solid transparent",
         transition: "all 0.3s ease",
       }}
