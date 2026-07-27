@@ -18,8 +18,8 @@ const contact = [
 
 export default function Measurements() {
   return (
-    <section id="measurements" className="w-full bg-white py-16 md:py-32">
-      <div className="mx-auto max-w-3xl px-6">
+    <section id="measurements" className="w-full bg-white pt-16 pb-24 md:py-32">
+      <div className="mx-auto max-w-3xl px-8 md:px-6">
         <h2
           className="mb-4 text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]"
           style={{ fontFamily: "var(--font-cormorant)" }}
@@ -49,7 +49,7 @@ export default function Measurements() {
             </a>
           ))}
 
-          <a href="/Sebastian_Nicoras_CompCard.pdf" download className="mt-5 inline-block border border-black px-6 py-3 text-[10px] md:text-xs tracking-[0.15em] md:tracking-[0.2em] uppercase text-black text-center">
+          <a href="/Sebastian_Nicoras_CompCard.pdf" download className="mt-5 mb-6 inline-block border border-black px-6 py-3 text-[10px] md:text-xs tracking-[0.15em] md:tracking-[0.2em] uppercase text-black text-center">
             Download Comp Card (PDF)
           </a>
         </div>
