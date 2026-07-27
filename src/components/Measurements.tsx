@@ -19,21 +19,18 @@ const contact = [
 export default function Measurements() {
   return (
     <section id="measurements" className="w-full bg-white" style={{ paddingTop: "64px", paddingBottom: "220px" }}>
-      <div className="px-8 md:px-6" style={{ maxWidth: "600px", marginLeft: "auto", marginRight: "auto" }}>
+      <div className="px-8 md:px-6" style={{ maxWidth: "900px", marginLeft: "auto", marginRight: "auto" }}>
         <h2
           className="text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]"
-          style={{ fontFamily: "var(--font-cormorant)", marginBottom: "64px" }}
+          style={{ fontFamily: "var(--font-cormorant)", marginBottom: "48px" }}
         >
-          SEBASTIAN NICORAS
+          SEBASTIANO NICORAS
         </h2>
-        <p className="text-center text-xs tracking-[0.3em] text-neutral-400" style={{ marginBottom: "56px" }}>
-          MEASUREMENTS
-        </p>
 
-        <div className="flex flex-col items-center" style={{ gap: "18px" }}>
+        <div className="flex flex-wrap justify-center" style={{ rowGap: "12px", columnGap: "28px" }}>
           {stats.map((s) => (
-            <p key={s.label} className="text-sm md:text-base tracking-[0.05em] text-center">
-              <span className="text-neutral-400">{s.label} — </span>
+            <p key={s.label} className="text-xs md:text-sm tracking-[0.05em] whitespace-nowrap">
+              <span className="text-neutral-400 uppercase">{s.label} </span>
               <span className="text-neutral-900">{s.value}</span>
             </p>
           ))}

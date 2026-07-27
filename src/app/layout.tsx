@@ -16,10 +16,10 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://sebastiano-nicoras.vercel.app"),
-  title: "Sebastian Nicoraș — Men's Fashion Model",
+  title: "Sebastiano Nicoraș — Men's Fashion Model",
   description: "Official model book. Height 181cm, Chest 99, Waist 81, Shoes 42. Based in Cluj-Napoca, Romania. Available for international bookings.",
   openGraph: {
-    title: "Sebastian Nicoraș — Men's Fashion Model",
+    title: "Sebastiano Nicoraș — Men's Fashion Model",
     description: "Official model book. Available for international bookings.",
     images: ["/portfolio/IMG_5192.jpeg"],
     type: "website",
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sebastian Nicoraș — Men's Fashion Model",
-    description: "Official model book. Available for international bookings.",
+    title: "Sebastiano Nicoraș — Men's Fashion Model",
+    description: "Available for international bookings.",
     images: ["/portfolio/IMG_5192.jpeg"],
   },
 };
