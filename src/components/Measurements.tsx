@@ -59,6 +59,12 @@ export default function Measurements() {
           <a href="/Sebastian_Nicoras_CompCard.pdf" download className="inline-block border border-black px-6 py-3 text-[10px] md:text-xs tracking-[0.15em] md:tracking-[0.2em] uppercase text-black text-center" style={{ marginTop: "32px" }}>
             Download Comp Card (PDF)
           </a>
+
+          <p className="text-neutral-400 text-center" style={{ marginTop: "64px", fontSize: "10px", letterSpacing: "0.05em" }}>
+            © {new Date().getFullYear()} Sebastiano Nicoras. All rights reserved.
+            <br />
+            All images are property of Sebastiano Nicoras and may not be copied, reproduced, or used without written permission.
+          </p>
         </div>
       </div>
     </section>
