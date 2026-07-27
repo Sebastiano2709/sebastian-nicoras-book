@@ -2,36 +2,25 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-[#faf9f7] flex flex-col items-center justify-center px-6" style={{ paddingTop: "80px", paddingBottom: "160px" }}>
-      <h1
-        className="text-center tracking-[0.25em] text-5xl md:text-7xl"
-        style={{ fontFamily: "var(--font-cormorant)" }}
-      >
-        SEBASTIAN NICORAS
-      </h1>
+    <section className="w-full flex flex-col md:flex-row min-h-screen">
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16" style={{ paddingTop: "120px", paddingBottom: "60px" }}>
+        <p className="uppercase tracking-[0.3em] text-xs text-neutral-400" style={{ marginBottom: "24px" }}>
+          Sebastian Nicoras
+        </p>
+        <a href="#portfolio" className="font-serif leading-[0.95] hover:text-neutral-500 transition" style={{ fontFamily: "var(--font-cormorant)", fontSize: "clamp(48px, 9vw, 110px)" }}>Portfolio</a>
+        <a href="#polaroids" className="font-serif leading-[0.95] hover:text-neutral-500 transition" style={{ fontFamily: "var(--font-cormorant)", fontSize: "clamp(48px, 9vw, 110px)" }}>Polaroids</a>
+        <a href="https://instagram.com/sebastiano.nicoras" target="_blank" rel="noopener noreferrer" className="font-serif leading-[0.95] hover:text-neutral-500 transition" style={{ fontFamily: "var(--font-cormorant)", fontSize: "clamp(48px, 9vw, 110px)" }}>Instagram</a>
+      </div>
 
-      <p className="text-xs md:text-sm uppercase tracking-[0.5em] text-gray-500" style={{ marginTop: "1.25rem" }}>
-        MEN&apos;S FASHION MODEL
-      </p>
-
-      <div className="w-full max-w-md" style={{ marginTop: "1.5rem", marginBottom: "0" }}>
+      <div className="w-full md:w-1/2 relative" style={{ minHeight: "60vh" }}>
         <Image
           src="/portfolio/IMG_5192.jpeg"
           alt="Sebastian Nicoras"
-          width={700}
-          height={1050}
+          fill
           priority
-          className="w-full h-auto"
+          className="object-cover"
         />
       </div>
-
-      <p className="text-sm tracking-[0.2em] text-center text-gray-700" style={{ marginTop: "2rem", marginBottom: "0" }}>
-        181 CM · 74 KG · CHEST 99 · WAIST 81 · SHOES 42
-      </p>
-
-      <a href="#portfolio" className="border border-black px-8 py-4 uppercase tracking-[0.3em] text-xs hover:bg-black hover:text-white transition" style={{ marginTop: "3rem" }}>
-        View Portfolio
-      </a>
     </section>
   );
 }
