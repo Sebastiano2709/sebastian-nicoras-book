@@ -29,7 +29,7 @@ export default function Hero() {
         181 CM · 74 KG · CHEST 99 · WAIST 81 · SHOES 42
       </p>
 
-      <a href="#selected-work" className="border border-black px-8 py-4 uppercase tracking-[0.3em] text-xs hover:bg-black hover:text-white transition" style={{ marginTop: "3rem" }}>
+      <a href="#portfolio" className="border border-black px-8 py-4 uppercase tracking-[0.3em] text-xs hover:bg-black hover:text-white transition" style={{ marginTop: "3rem" }}>
         View Portfolio
       </a>
     </section>
