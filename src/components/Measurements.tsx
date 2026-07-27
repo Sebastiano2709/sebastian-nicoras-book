@@ -30,7 +30,7 @@ export default function Measurements() {
           MEASUREMENTS
         </p>
 
-        <div className="grid grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-3 md:gap-x-12">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-3 md:gap-x-12 text-center">
           {stats.map((s) => (
             <div key={s.label} className="border-b border-neutral-200 pb-3">
               <p className="text-[10px] md:text-[11px] tracking-[0.2em] md:tracking-[0.25em] text-neutral-400">
