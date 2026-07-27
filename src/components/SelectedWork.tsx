@@ -12,7 +12,7 @@ export default function SelectedWork() {
   const rest = allImages.slice(7);
 
   return (
-    <section id="portfolio" className="w-full px-4 md:px-12 py-12 md:py-20 max-w-6xl mx-auto">
+    <section id="portfolio" className="w-full px-4 md:px-12 py-12 md:py-20" style={{ maxWidth: "1152px", marginLeft: "auto", marginRight: "auto" }}>
       <h2 className="text-2xl md:text-4xl font-serif mb-8 md:mb-14 text-center">Selected Work</h2>
 
       <div className="mb-6 md:mb-10">
