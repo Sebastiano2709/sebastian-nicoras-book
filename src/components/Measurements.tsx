@@ -18,19 +18,19 @@ const contact = [
 
 export default function Measurements() {
   return (
-    <section id="measurements" className="w-full bg-white pt-16 pb-24 md:py-32">
+    <section id="measurements" className="w-full bg-white pt-16 pb-32 md:pt-32 md:pb-40">
       <div className="mx-auto max-w-3xl px-8 md:px-6">
         <h2
-          className="mb-4 text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]"
+          className="mb-8 md:mb-10 text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]"
           style={{ fontFamily: "var(--font-cormorant)" }}
         >
           SEBASTIAN NICORAS
         </h2>
-        <p className="mb-12 md:mb-20 text-center text-xs tracking-[0.3em] text-neutral-400">
+        <p className="mb-20 md:mb-28 text-center text-xs tracking-[0.3em] text-neutral-400">
           MEASUREMENTS
         </p>
 
-        <div className="grid grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-3 md:gap-x-12 text-center">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 md:gap-x-12 md:gap-y-8 text-center">
           {stats.map((s) => (
             <div key={s.label} className="border-b border-neutral-200 pb-3">
               <p className="text-[10px] md:text-[11px] tracking-[0.2em] md:tracking-[0.25em] text-neutral-400">
@@ -49,7 +49,7 @@ export default function Measurements() {
             </a>
           ))}
 
-          <a href="/Sebastian_Nicoras_CompCard.pdf" download className="mt-5 mb-6 inline-block border border-black px-6 py-3 text-[10px] md:text-xs tracking-[0.15em] md:tracking-[0.2em] uppercase text-black text-center">
+          <a href="/Sebastian_Nicoras_CompCard.pdf" download className="mt-5 inline-block border border-black px-6 py-3 text-[10px] md:text-xs tracking-[0.15em] md:tracking-[0.2em] uppercase text-black text-center">
             Download Comp Card (PDF)
           </a>
         </div>
