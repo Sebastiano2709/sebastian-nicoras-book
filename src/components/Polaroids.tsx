@@ -17,10 +17,10 @@ export default function Polaroids() {
 
   return (
     <section id="polaroids" className="w-full bg-white py-16 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="px-6" style={{ maxWidth: "1152px", marginLeft: "auto", marginRight: "auto" }}>
         <h2 className="mb-12 md:mb-20 text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]" style={{ fontFamily: "var(--font-cormorant)" }}>POLAROIDS</h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4" style={{ gap: "24px" }}>
           {polaroids.map((src, i) => (
             <LightboxTrigger key={src} images={allImages} index={i}>
               <div className="overflow-hidden bg-neutral-100">
