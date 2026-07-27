@@ -56,7 +56,7 @@ export default function Measurements() {
             </a>
           ))}
 
-          <a href="/Sebastian_Nicoras_CompCard.pdf" download style={{ marginTop: "40px", display: "inline-block", background: "#111111", color: "#ffffff", padding: "16px 40px", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase" }}>
+          <a href="/Sebastian_Nicoras_CompCard.pdf" download className="hover:bg-black hover:text-white" style={{ marginTop: "40px", display: "inline-block", border: "1px solid #111111", color: "#111111", padding: "15px 40px", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", transition: "all 0.3s ease" }}>
             Download Comp Card
           </a>
 
