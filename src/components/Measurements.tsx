@@ -18,7 +18,7 @@ const contact = [
 
 export default function Measurements() {
   return (
-    <section id="measurements" className="w-full bg-white pt-16 pb-32 md:pt-32 md:pb-40">
+    <section id="measurements" className="w-full bg-white pt-16 pb-48 md:pt-32 md:pb-56">
       <div className="mx-auto max-w-3xl px-8 md:px-6">
         <h2
           className="mb-16 md:mb-20 text-center text-3xl md:text-5xl tracking-[0.2em] md:tracking-[0.35em]"
