@@ -56,9 +56,8 @@ export default function Measurements() {
             </a>
           ))}
 
-          <a href="/Sebastian_Nicoras_CompCard.pdf" download style={{ marginTop: "40px", display: "inline-flex", alignItems: "center", gap: "10px", color: "#111111", padding: "12px 0", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", borderBottom: "1px solid #111111" }}>
+          <a href="/Sebastian_Nicoras_CompCard.pdf" download style={{ marginTop: "40px", display: "inline-block", background: "#111111", color: "#ffffff", padding: "16px 40px", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase" }}>
             Download Comp Card
-            <span style={{ fontSize: "14px" }}>↓</span>
           </a>
 
           <p className="text-neutral-400 text-center" style={{ marginTop: "64px", fontSize: "10px", letterSpacing: "0.05em" }}>
