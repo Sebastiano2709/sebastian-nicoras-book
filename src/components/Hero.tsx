@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="w-full flex flex-col md:flex-row min-h-screen">
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16" style={{ paddingTop: "120px", paddingBottom: "60px" }}>
+      <div className="w-full md:w-1/2 flex flex-col justify-center" style={{ paddingTop: "120px", paddingBottom: "60px", paddingLeft: "clamp(24px, 8vw, 96px)", paddingRight: "clamp(24px, 8vw, 96px)" }}>
         <p className="uppercase tracking-[0.3em] text-xs text-neutral-400" style={{ marginBottom: "24px" }}>
           Sebastian Nicoras
         </p>
-        <a href="#portfolio" className="font-serif leading-[0.95] hover:text-neutral-500 transition" style={{ fontFamily: "var(--font-cormorant)", fontSize: "clamp(48px, 9vw, 110px)" }}>Portfolio</a>
-        <a href="#polaroids" className="font-serif leading-[0.95] hover:text-neutral-500 transition" style={{ fontFamily: "var(--font-cormorant)", fontSize: "clamp(48px, 9vw, 110px)" }}>Polaroids</a>
-        <a href="https://instagram.com/sebastiano.nicoras" target="_blank" rel="noopener noreferrer" className="font-serif leading-[0.95] hover:text-neutral-500 transition" style={{ fontFamily: "var(--font-cormorant)", fontSize: "clamp(48px, 9vw, 110px)" }}>Instagram</a>
+        <a href="#portfolio" className="uppercase hover:text-neutral-500 transition" style={{ fontFamily: "var(--font-cormorant)", fontSize: "clamp(40px, 7vw, 88px)", letterSpacing: "0.1em", lineHeight: 1.15 }}>Portfolio</a>
+        <a href="#polaroids" className="uppercase hover:text-neutral-500 transition" style={{ fontFamily: "var(--font-cormorant)", fontSize: "clamp(40px, 7vw, 88px)", letterSpacing: "0.1em", lineHeight: 1.15 }}>Polaroids</a>
+        <a href="https://instagram.com/sebastiano.nicoras" target="_blank" rel="noopener noreferrer" className="uppercase hover:text-neutral-500 transition" style={{ fontFamily: "var(--font-cormorant)", fontSize: "clamp(40px, 7vw, 88px)", letterSpacing: "0.1em", lineHeight: 1.15 }}>Instagram</a>
       </div>
 
       <div className="w-full md:w-1/2 relative" style={{ minHeight: "60vh" }}>
