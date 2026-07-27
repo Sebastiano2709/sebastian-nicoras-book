@@ -19,6 +19,7 @@ export default function Hero() {
           fill
           priority
           className="object-cover"
+          style={{ objectPosition: "center 15%" }}
         />
       </div>
     </section>
