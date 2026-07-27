@@ -41,7 +41,11 @@ export default function SelectedWork() {
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-6">
         {rest.map((src, i) => (
-          <LightboxTrigger key={src} images={allImages} index={i + 7}><img src={src} alt="" className="w-full h-auto object-cover" /></LightboxTrigger>
+          <LightboxTrigger key={src} images={allImages} index={i + 7}>
+            <div className="aspect-[3/4] overflow-hidden">
+              <img src={src} alt="" className="w-full h-full object-cover" />
+            </div>
+          </LightboxTrigger>
         ))}
       </div>
     </section>
