@@ -6,7 +6,7 @@ export default function SelectedWork() {
 
   return (
     <section id="portfolio" className="w-full">
-      <div className="grid grid-cols-2 md:grid-cols-3" style={{ gap: "4px" }}>
+      <div className="grid grid-cols-2 md:grid-cols-3" style={{ gap: "12px" }}>
         {allImages.map((src, i) => (
           <LightboxTrigger key={src} images={allImages} index={i}>
             <div className="aspect-[3/4] overflow-hidden">
