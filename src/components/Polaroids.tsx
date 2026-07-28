@@ -14,9 +14,9 @@ export default function Polaroids() {
   const allImages = polaroids.map((img) => `/polaroids/${img}`);
 
   return (
-    <section id="polaroids" className="w-full px-3 md:px-12" style={{ paddingTop: "16px", paddingBottom: "16px" }}>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8" style={{ maxWidth: "1400px", marginLeft: "auto", marginRight: "auto" }}>
-        <div className="flex flex-col gap-4 md:gap-16">
+    <section id="polaroids" className="w-full px-4 md:px-12" style={{ paddingTop: "16px", paddingBottom: "16px" }}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8" style={{ maxWidth: "1400px", marginLeft: "auto", marginRight: "auto" }}>
+        <div className="flex flex-col gap-5 md:gap-16">
           {polaroids.filter((_, i) => i % 2 === 0).map((src) => {
             const i = polaroids.indexOf(src);
             return (
@@ -28,7 +28,7 @@ export default function Polaroids() {
             );
           })}
         </div>
-        <div className="flex flex-col gap-4 md:gap-16" style={{ marginTop: "80px" }}>
+        <div className="flex flex-col gap-5 md:gap-16" style={{ marginTop: "80px" }}>
           {polaroids.filter((_, i) => i % 2 === 1).map((src) => {
             const i = polaroids.indexOf(src);
             return (
