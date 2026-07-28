@@ -15,7 +15,7 @@ const statsRow2 = [
 
 export default function StatsStrip() {
   return (
-    <div id="measurements" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px", paddingTop: "24px", paddingBottom: "24px" }}>
+    <div id="measurements" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px", paddingTop: "24px", paddingBottom: "24px", scrollMarginTop: "120px" }}>
       <div className="flex flex-wrap justify-center" style={{ columnGap: "20px" }}>
         {statsRow1.map((s) => (
           <p key={s.label} className="whitespace-nowrap" style={{ fontSize: "12px", letterSpacing: "0.02em" }}>
