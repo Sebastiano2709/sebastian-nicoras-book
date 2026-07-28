@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import StatsStrip from "@/components/StatsStrip";
 import Polaroids from "@/components/Polaroids";
 import SelectedWork from "@/components/SelectedWork";
 import Measurements from "@/components/Measurements";
@@ -9,6 +10,7 @@ export default function Home() {
     <main style={{ maxWidth: "1600px", margin: "0 auto" }}>
       <Nav />
       <Hero />
+      <StatsStrip />
       <Polaroids />
       <SelectedWork />
       <Measurements />
