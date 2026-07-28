@@ -6,9 +6,9 @@ export default function SelectedWork() {
   const allImages = portfolio.map((img) => `/portfolio/${img}`);
 
   return (
-    <section id="portfolio" className="w-full" style={{ paddingLeft: "48px", paddingRight: "48px", paddingTop: "48px", paddingBottom: "48px" }}>
-      <div className="grid grid-cols-1 md:grid-cols-2" style={{ columnGap: "32px", maxWidth: "1400px", marginLeft: "auto", marginRight: "auto" }}>
-        <div style={{ display: "flex", flexDirection: "column", gap: "64px" }}>
+    <section id="portfolio" className="w-full px-2 md:px-12" style={{ paddingTop: "16px", paddingBottom: "16px" }}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8" style={{ maxWidth: "1400px", marginLeft: "auto", marginRight: "auto" }}>
+        <div className="flex flex-col gap-2 md:gap-16">
           {allImages.filter((_, i) => i % 2 === 0).map((src) => {
             const i = allImages.indexOf(src);
             return (
@@ -20,7 +20,7 @@ export default function SelectedWork() {
             );
           })}
         </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: "64px", marginTop: "80px" }}>
+        <div className="flex flex-col gap-2 md:gap-16 md:mt-20">
           {allImages.filter((_, i) => i % 2 === 1).map((src) => {
             const i = allImages.indexOf(src);
             return (
