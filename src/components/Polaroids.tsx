@@ -13,13 +13,11 @@ export default function Polaroids() {
   const allImages = polaroids.map((img) => `/polaroids/${img}`);
 
   return (
-    <section id="polaroids" className="w-full">
-      <div className="grid grid-cols-2" style={{ gap: "12px" }}>
+    <section id="polaroids" className="w-full" style={{ paddingLeft: "24px", paddingRight: "24px", paddingTop: "48px", paddingBottom: "48px" }}>
+      <div className="grid grid-cols-1 md:grid-cols-2" style={{ columnGap: "24px", rowGap: "48px", maxWidth: "1600px", marginLeft: "auto", marginRight: "auto" }}>
         {polaroids.map((src, i) => (
           <LightboxTrigger key={src} images={allImages} index={i}>
-            <div className="aspect-[3/4] overflow-hidden bg-neutral-100">
-              <img src={`/polaroids/${src}`} alt="" className="w-full h-full object-cover" />
-            </div>
+            <img src={`/polaroids/${src}`} alt="" className="w-full h-auto object-cover" />
           </LightboxTrigger>
         ))}
       </div>
