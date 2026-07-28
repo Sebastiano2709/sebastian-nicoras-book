@@ -26,11 +26,12 @@ export default function StatsStrip() {
 
   if (isMobile) {
     return (
-      <div id="measurements" style={{ scrollMarginTop: "120px", paddingTop: "24px", paddingBottom: "24px", paddingLeft: "24px", paddingRight: "24px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", rowGap: "14px", columnGap: "16px", maxWidth: "360px", marginLeft: "auto", marginRight: "auto" }}>
+      <div id="measurements" style={{ scrollMarginTop: "120px", paddingTop: "24px", paddingBottom: "24px", paddingLeft: "16px", paddingRight: "16px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", rowGap: "16px", columnGap: "8px", maxWidth: "420px", marginLeft: "auto", marginRight: "auto" }}>
           {allStats.map((s) => (
-            <p key={s.label} style={{ fontSize: "13px", letterSpacing: "0.02em", fontWeight: 400 }}>
-              <span className="text-neutral-400 uppercase">{s.label}: </span>
+            <p key={s.label} style={{ fontSize: "11px", letterSpacing: "0.01em", fontWeight: 400, textAlign: "center" }}>
+              <span className="text-neutral-400 uppercase">{s.label}</span>
+              <br />
               <span className="text-neutral-900" style={{ fontWeight: 500 }}>{s.value}</span>
             </p>
           ))}
