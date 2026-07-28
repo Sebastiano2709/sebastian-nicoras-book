@@ -1,23 +1,35 @@
+"use client";
+
 import { portfolio } from "@/data/portfolio";
 import { LightboxTrigger } from "@/components/Lightbox";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { useIsMobile } from "@/components/useIsMobile";
 
 export default function SelectedWork() {
   const allImages = portfolio.map((img) => `/portfolio/${img}`);
+  const isMobile = useIsMobile();
+
+  if (isMobile === null) return <section id="portfolio" className="w-full" />;
+
+  if (isMobile) {
+    return (
+      <section id="portfolio" className="w-full">
+        <div style={{ display: "flex", flexDirection: "column", gap: "28px", paddingTop: "16px", paddingBottom: "16px" }}>
+          {allImages.map((src, i) => (
+            <RevealOnScroll key={src}>
+              <LightboxTrigger images={allImages} index={i}>
+                <img src={src} alt="" className="w-full h-auto object-cover" />
+              </LightboxTrigger>
+            </RevealOnScroll>
+          ))}
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="portfolio" className="w-full">
-      <div className="block md:hidden" style={{ display: "flex", flexDirection: "column", gap: "28px", paddingTop: "16px", paddingBottom: "16px" }}>
-        {allImages.map((src, i) => (
-          <RevealOnScroll key={src}>
-            <LightboxTrigger images={allImages} index={i}>
-              <img src={src} alt="" className="w-full h-auto object-cover" />
-            </LightboxTrigger>
-          </RevealOnScroll>
-        ))}
-      </div>
-
-      <div className="hidden md:grid md:grid-cols-2 md:px-12" style={{ gap: "32px", maxWidth: "1400px", marginLeft: "auto", marginRight: "auto", paddingTop: "16px", paddingBottom: "16px" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "32px", maxWidth: "1400px", marginLeft: "auto", marginRight: "auto", paddingTop: "16px", paddingBottom: "16px", paddingLeft: "48px", paddingRight: "48px" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: "64px" }}>
           {allImages.filter((_, i) => i % 2 === 0).map((src) => {
             const i = allImages.indexOf(src);

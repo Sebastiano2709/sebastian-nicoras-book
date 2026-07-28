@@ -1,5 +1,8 @@
+"use client";
+
 import { LightboxTrigger } from "@/components/Lightbox";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import { useIsMobile } from "@/components/useIsMobile";
 
 const polaroids = [
   "RBV_4872.jpg",
@@ -12,20 +15,29 @@ const polaroids = [
 
 export default function Polaroids() {
   const allImages = polaroids.map((img) => `/polaroids/${img}`);
+  const isMobile = useIsMobile();
+
+  if (isMobile === null) return <section id="polaroids" className="w-full" />;
+
+  if (isMobile) {
+    return (
+      <section id="polaroids" className="w-full">
+        <div style={{ display: "flex", flexDirection: "column", gap: "28px", paddingTop: "16px", paddingBottom: "16px" }}>
+          {polaroids.map((src, i) => (
+            <RevealOnScroll key={src}>
+              <LightboxTrigger images={allImages} index={i}>
+                <img src={`/polaroids/${src}`} alt="" className="w-full h-auto object-cover" />
+              </LightboxTrigger>
+            </RevealOnScroll>
+          ))}
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="polaroids" className="w-full">
-      <div className="block md:hidden" style={{ display: "flex", flexDirection: "column", gap: "28px", paddingTop: "16px", paddingBottom: "16px" }}>
-        {polaroids.map((src, i) => (
-          <RevealOnScroll key={src}>
-            <LightboxTrigger images={allImages} index={i}>
-              <img src={`/polaroids/${src}`} alt="" className="w-full h-auto object-cover" />
-            </LightboxTrigger>
-          </RevealOnScroll>
-        ))}
-      </div>
-
-      <div className="hidden md:grid md:grid-cols-2 md:px-12" style={{ gap: "32px", maxWidth: "1400px", marginLeft: "auto", marginRight: "auto", paddingTop: "16px", paddingBottom: "16px" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "32px", maxWidth: "1400px", marginLeft: "auto", marginRight: "auto", paddingTop: "16px", paddingBottom: "16px", paddingLeft: "48px", paddingRight: "48px" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: "64px" }}>
           {polaroids.filter((_, i) => i % 2 === 0).map((src) => {
             const i = polaroids.indexOf(src);
