@@ -6,17 +6,42 @@ export default function SelectedWork() {
   const allImages = portfolio.map((img) => `/portfolio/${img}`);
 
   return (
-    <section id="portfolio" className="w-full px-0 md:px-12" style={{ paddingTop: "16px", paddingBottom: "16px" }}>
-      <div className="columns-1 md:columns-2" style={{ maxWidth: "1400px", marginLeft: "auto", marginRight: "auto", columnGap: "32px" }}>
+    <section id="portfolio" className="w-full">
+      <div className="block md:hidden" style={{ display: "flex", flexDirection: "column", gap: "28px", paddingTop: "16px", paddingBottom: "16px" }}>
         {allImages.map((src, i) => (
-          <div key={src} style={{ breakInside: "avoid", marginBottom: "24px" }}>
-            <RevealOnScroll>
-              <LightboxTrigger images={allImages} index={i}>
-                <img src={src} alt="" className="w-full h-auto object-cover" />
-              </LightboxTrigger>
-            </RevealOnScroll>
-          </div>
+          <RevealOnScroll key={src}>
+            <LightboxTrigger images={allImages} index={i}>
+              <img src={src} alt="" className="w-full h-auto object-cover" />
+            </LightboxTrigger>
+          </RevealOnScroll>
         ))}
+      </div>
+
+      <div className="hidden md:grid md:grid-cols-2 md:px-12" style={{ gap: "32px", maxWidth: "1400px", marginLeft: "auto", marginRight: "auto", paddingTop: "16px", paddingBottom: "16px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "64px" }}>
+          {allImages.filter((_, i) => i % 2 === 0).map((src) => {
+            const i = allImages.indexOf(src);
+            return (
+              <RevealOnScroll key={src}>
+                <LightboxTrigger images={allImages} index={i}>
+                  <img src={src} alt="" className="w-full h-auto object-cover" />
+                </LightboxTrigger>
+              </RevealOnScroll>
+            );
+          })}
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: "64px", marginTop: "80px" }}>
+          {allImages.filter((_, i) => i % 2 === 1).map((src) => {
+            const i = allImages.indexOf(src);
+            return (
+              <RevealOnScroll key={src}>
+                <LightboxTrigger images={allImages} index={i}>
+                  <img src={src} alt="" className="w-full h-auto object-cover" />
+                </LightboxTrigger>
+              </RevealOnScroll>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
