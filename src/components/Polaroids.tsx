@@ -22,7 +22,7 @@ export default function Polaroids() {
   if (isMobile) {
     return (
       <section id="polaroids" className="w-full">
-        <div style={{ display: "flex", flexDirection: "column", gap: "28px", paddingTop: "16px", paddingBottom: "16px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "48px", paddingTop: "16px", paddingBottom: "16px" }}>
           {polaroids.map((src, i) => (
             <RevealOnScroll key={src}>
               <LightboxTrigger images={allImages} index={i}>

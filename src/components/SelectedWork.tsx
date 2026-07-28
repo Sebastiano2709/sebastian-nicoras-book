@@ -14,7 +14,7 @@ export default function SelectedWork() {
   if (isMobile) {
     return (
       <section id="portfolio" className="w-full">
-        <div style={{ display: "flex", flexDirection: "column", gap: "28px", paddingTop: "16px", paddingBottom: "16px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "48px", paddingTop: "16px", paddingBottom: "16px" }}>
           {allImages.map((src, i) => (
             <RevealOnScroll key={src}>
               <LightboxTrigger images={allImages} index={i}>
