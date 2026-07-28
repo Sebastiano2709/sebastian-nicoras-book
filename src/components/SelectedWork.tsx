@@ -20,7 +20,7 @@ export default function SelectedWork() {
             );
           })}
         </div>
-        <div className="flex flex-col gap-4 md:gap-16 md:mt-20">
+        <div className="flex flex-col gap-4 md:gap-16" style={{ marginTop: "80px" }}>
           {allImages.filter((_, i) => i % 2 === 1).map((src) => {
             const i = allImages.indexOf(src);
             return (
