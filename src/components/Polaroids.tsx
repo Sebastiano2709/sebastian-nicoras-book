@@ -1,4 +1,5 @@
 import { LightboxTrigger } from "@/components/Lightbox";
+import RevealOnScroll from "@/components/RevealOnScroll";
 
 const polaroids = [
   "RBV_4872.jpg",
@@ -19,9 +20,11 @@ export default function Polaroids() {
           {polaroids.filter((_, i) => i % 2 === 0).map((src) => {
             const i = polaroids.indexOf(src);
             return (
-              <LightboxTrigger key={src} images={allImages} index={i}>
-                <img src={`/polaroids/${src}`} alt="" className="w-full h-auto object-cover" />
-              </LightboxTrigger>
+              <RevealOnScroll key={src}>
+                <LightboxTrigger images={allImages} index={i}>
+                  <img src={`/polaroids/${src}`} alt="" className="w-full h-auto object-cover" />
+                </LightboxTrigger>
+              </RevealOnScroll>
             );
           })}
         </div>
@@ -29,9 +32,11 @@ export default function Polaroids() {
           {polaroids.filter((_, i) => i % 2 === 1).map((src) => {
             const i = polaroids.indexOf(src);
             return (
-              <LightboxTrigger key={src} images={allImages} index={i}>
-                <img src={`/polaroids/${src}`} alt="" className="w-full h-auto object-cover" />
-              </LightboxTrigger>
+              <RevealOnScroll key={src}>
+                <LightboxTrigger images={allImages} index={i}>
+                  <img src={`/polaroids/${src}`} alt="" className="w-full h-auto object-cover" />
+                </LightboxTrigger>
+              </RevealOnScroll>
             );
           })}
         </div>

@@ -1,5 +1,6 @@
 import { portfolio } from "@/data/portfolio";
 import { LightboxTrigger } from "@/components/Lightbox";
+import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function SelectedWork() {
   const allImages = portfolio.map((img) => `/portfolio/${img}`);
@@ -11,9 +12,11 @@ export default function SelectedWork() {
           {allImages.filter((_, i) => i % 2 === 0).map((src) => {
             const i = allImages.indexOf(src);
             return (
-              <LightboxTrigger key={src} images={allImages} index={i}>
-                <img src={src} alt="" className="w-full h-auto object-cover" />
-              </LightboxTrigger>
+              <RevealOnScroll key={src}>
+                <LightboxTrigger images={allImages} index={i}>
+                  <img src={src} alt="" className="w-full h-auto object-cover" />
+                </LightboxTrigger>
+              </RevealOnScroll>
             );
           })}
         </div>
@@ -21,9 +24,11 @@ export default function SelectedWork() {
           {allImages.filter((_, i) => i % 2 === 1).map((src) => {
             const i = allImages.indexOf(src);
             return (
-              <LightboxTrigger key={src} images={allImages} index={i}>
-                <img src={src} alt="" className="w-full h-auto object-cover" />
-              </LightboxTrigger>
+              <RevealOnScroll key={src}>
+                <LightboxTrigger images={allImages} index={i}>
+                  <img src={src} alt="" className="w-full h-auto object-cover" />
+                </LightboxTrigger>
+              </RevealOnScroll>
             );
           })}
         </div>
