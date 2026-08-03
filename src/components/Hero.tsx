@@ -14,12 +14,12 @@ export default function Hero() {
 
       <div className="w-full md:w-1/2 relative" style={{ minHeight: "60vh" }}>
         <Image
-          src="/portfolio/IMG_5192.jpeg"
+          src="/portfolio/RBV_3928.jpg"
           alt="Sebastiano Nicoras"
           fill
           priority
           className="object-cover"
-          style={{ objectPosition: "center 15%" }}
+          style={{ objectPosition: "center 20%" }}
         />
       </div>
     </section>
