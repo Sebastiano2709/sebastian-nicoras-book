@@ -18,8 +18,7 @@ export default function Hero() {
           alt="Sebastiano Nicoras"
           fill
           priority
-          className="object-cover"
-          style={{ objectPosition: "center 20%" }}
+          className="object-contain"
         />
       </div>
     </section>
