@@ -30,7 +30,7 @@ export default function SelectedWork() {
   return (
     <section id="portfolio" className="w-full">
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "32px", maxWidth: "1400px", marginLeft: "auto", marginRight: "auto", paddingTop: "16px", paddingBottom: "16px", paddingLeft: "48px", paddingRight: "48px" }}>
-        <div style={{ display: "flex", flexDirection: "column", gap: "64px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
           {allImages.filter((_, i) => i % 2 === 0).map((src) => {
             const i = allImages.indexOf(src);
             return (
@@ -42,7 +42,7 @@ export default function SelectedWork() {
             );
           })}
         </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: "64px", marginTop: "80px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "24px", marginTop: "80px" }}>
           {allImages.filter((_, i) => i % 2 === 1).map((src) => {
             const i = allImages.indexOf(src);
             return (
