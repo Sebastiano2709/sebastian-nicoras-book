@@ -18,7 +18,7 @@ export default function SelectedWork() {
           {allImages.map((src, i) => (
             <RevealOnScroll key={src}>
               <LightboxTrigger images={allImages} index={i}>
-                <img src={src} alt="" className="w-full h-auto object-cover" />
+                <img src={src} alt="" className="w-full object-cover" style={{ aspectRatio: "4/5" }} />
               </LightboxTrigger>
             </RevealOnScroll>
           ))}
@@ -36,7 +36,7 @@ export default function SelectedWork() {
             return (
               <RevealOnScroll key={src}>
                 <LightboxTrigger images={allImages} index={i}>
-                  <img src={src} alt="" className="w-full h-auto object-cover" />
+                  <img src={src} alt="" className="w-full object-cover" style={{ aspectRatio: "4/5" }} />
                 </LightboxTrigger>
               </RevealOnScroll>
             );
@@ -48,7 +48,7 @@ export default function SelectedWork() {
             return (
               <RevealOnScroll key={src}>
                 <LightboxTrigger images={allImages} index={i}>
-                  <img src={src} alt="" className="w-full h-auto object-cover" />
+                  <img src={src} alt="" className="w-full object-cover" style={{ aspectRatio: "4/5" }} />
                 </LightboxTrigger>
               </RevealOnScroll>
             );
