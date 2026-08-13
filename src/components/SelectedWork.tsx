@@ -18,7 +18,7 @@ export default function SelectedWork() {
           {allImages.map((src, i) => (
             <RevealOnScroll key={src}>
               <LightboxTrigger images={allImages} index={i}>
-                <img src={src} alt="" className="w-full object-cover" style={{ aspectRatio: "4/5" }} />
+                <img src={src} alt="" className="w-full h-auto object-cover" />
               </LightboxTrigger>
             </RevealOnScroll>
           ))}
@@ -30,25 +30,25 @@ export default function SelectedWork() {
   return (
     <section id="portfolio" className="w-full">
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "32px", maxWidth: "1400px", marginLeft: "auto", marginRight: "auto", paddingTop: "16px", paddingBottom: "16px", paddingLeft: "48px", paddingRight: "48px" }}>
-        <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
           {allImages.filter((_, i) => i % 2 === 0).map((src) => {
             const i = allImages.indexOf(src);
             return (
               <RevealOnScroll key={src}>
                 <LightboxTrigger images={allImages} index={i}>
-                  <img src={src} alt="" className="w-full object-cover" style={{ aspectRatio: "4/5" }} />
+                  <img src={src} alt="" className="w-full h-auto object-cover" />
                 </LightboxTrigger>
               </RevealOnScroll>
             );
           })}
         </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: "24px", marginTop: "80px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "4px", marginTop: "80px" }}>
           {allImages.filter((_, i) => i % 2 === 1).map((src) => {
             const i = allImages.indexOf(src);
             return (
               <RevealOnScroll key={src}>
                 <LightboxTrigger images={allImages} index={i}>
-                  <img src={src} alt="" className="w-full object-cover" style={{ aspectRatio: "4/5" }} />
+                  <img src={src} alt="" className="w-full h-auto object-cover" />
                 </LightboxTrigger>
               </RevealOnScroll>
             );
