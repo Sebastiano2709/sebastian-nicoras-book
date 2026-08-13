@@ -1,6 +1,5 @@
 export const portfolio = [
   "IMG_8164.jpeg",
-  "IMG_1629.jpeg",
   "IMG_1915.jpeg",
   "IMG_1732.jpeg",
   "IMG_1622.jpeg",
