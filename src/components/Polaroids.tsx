@@ -26,7 +26,7 @@ export default function Polaroids() {
           {polaroids.map((src, i) => (
             <RevealOnScroll key={src}>
               <LightboxTrigger images={allImages} index={i}>
-                <img src={`/polaroids/${src}`} alt="" className="w-full object-cover" style={{ aspectRatio: "4/5" }} />
+                <img src={`/polaroids/${src}`} alt="" className="w-full h-auto object-cover" />
               </LightboxTrigger>
             </RevealOnScroll>
           ))}
@@ -44,7 +44,7 @@ export default function Polaroids() {
             return (
               <RevealOnScroll key={src}>
                 <LightboxTrigger images={allImages} index={i}>
-                  <img src={`/polaroids/${src}`} alt="" className="w-full object-cover" style={{ aspectRatio: "4/5" }} />
+                  <img src={`/polaroids/${src}`} alt="" className="w-full h-auto object-cover" />
                 </LightboxTrigger>
               </RevealOnScroll>
             );
@@ -56,7 +56,7 @@ export default function Polaroids() {
             return (
               <RevealOnScroll key={src}>
                 <LightboxTrigger images={allImages} index={i}>
-                  <img src={`/polaroids/${src}`} alt="" className="w-full object-cover" style={{ aspectRatio: "4/5" }} />
+                  <img src={`/polaroids/${src}`} alt="" className="w-full h-auto object-cover" />
                 </LightboxTrigger>
               </RevealOnScroll>
             );
