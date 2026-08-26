@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { LightboxProvider } from "@/components/Lightbox";
 
@@ -44,6 +45,18 @@ export default function RootLayout({
       className={`${inter.variable} ${cormorant.variable}`}
     >
       <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-CGNJVQNKZS"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CGNJVQNKZS');
+          `}
+        </Script>
         <LightboxProvider>{children}</LightboxProvider>
       </body>
     </html>
