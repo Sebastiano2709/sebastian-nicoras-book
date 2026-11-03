@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "siteName": "Sebastiano Nicoras",
+    "title": "Sebastiano Nicoras — Men's Fashion Model",
+    "description": "Official model book. Height 181 cm, chest 99, waist 81, shoes 42. Based in Cluj-Napoca, Romania. Available for international bookings.",
+    "ogAlt": "Sebastiano Nicoras, men's fashion model, in a black tuxedo in the studio",
+    "jobTitle": "Men's fashion model"
+  },
+  "nav": {
+    "portfolio": "Portfolio",
+    "polaroids": "Polaroids",
+    "measurements": "Measurements",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "primary": "Main navigation",
+    "skip": "Skip to content",
+    "language": "Română",
+    "languageName": "Romanian version",
+    "booking": "Booking",
+    "compCard": "Comp card",
+    "instagram": "Instagram",
+    "enquiry": "Booking enquiry",
+    "closeMenu": "Close menu",
+    "where": "Cluj-Napoca, Romania · International bookings",
+    "home": "Sebastiano Nicoras — home"
+  },
+  "hero": {
+    "role": "Men's fashion model",
+    "location": "Based in Cluj-Napoca, Romania",
+    "availability": "Available for international bookings",
+    "cta": "Send a booking enquiry",
+    "compCard": "Download comp card"
+  },
+  "measurements": {
+    "title": "Measurements",
+    "height": "Height",
+    "weight": "Weight",
+    "chest": "Chest",
+    "waist": "Waist",
+    "hips": "Hips",
+    "suit": "Suit",
+    "shoes": "Shoes",
+    "hair": "Hair",
+    "eyes": "Eyes",
+    "hairValue": "Black",
+    "eyesValue": "Brown"
+  },
+  "sections": {
+    "portfolio": "Portfolio",
+    "polaroids": "Polaroids"
+  },
+  "gallery": {
+    "view": "View larger:",
+    "dialog": "Image viewer",
+    "close": "Close",
+    "previous": "Previous image",
+    "next": "Next image",
+    "of": "of"
+  },
+  "book": {
+    "contactTitle": "Contact",
+    "contactLead": "For bookings, castings and collaborations, send an enquiry or write directly.",
+    "email": "Email",
+    "instagram": "Instagram",
+    "compCard": "Comp card",
+    "compCardFile": "PDF, 2 pages"
+  },
+  "contact": {
+    "title": "Booking enquiry",
+    "intro": "Send the details of your project. You can also write directly to",
+    "name": "Name",
+    "email": "Email",
+    "company": "Agency or company",
+    "optional": "optional",
+    "message": "Message",
+    "messageHint": "Project, dates and location help me reply with availability.",
+    "submit": "Send enquiry",
+    "sending": "Sending…",
+    "success": "Thank you — your enquiry was received.",
+    "successBack": "Back to the book",
+    "errorSummary": "Please check the highlighted fields.",
+    "unavailable": "Enquiries can't be received right now. Please try again in a few minutes, or write to the email address above.",
+    "limited": "Too many messages. Please try again later.",
+    "privacy": "Your details are used only to answer this enquiry.",
+    "privacyLink": "Privacy policy",
+    "errors": {
+      "name": "Please enter your name.",
+      "email": "Please enter a valid email.",
+      "company": "Please use at most 120 characters.",
+      "message": "Please write at least 10 characters."
+    }
+  },
+  "consent": {
+    "region": "Cookie consent",
+    "title": "Analytics cookies",
+    "text": "With your permission, this site uses Google Analytics to count visits. Its cookies are set only if you accept; you can change your choice at any time.",
+    "accept": "Accept analytics",
+    "reject": "Reject",
+    "policy": "Cookie policy",
+    "settings": "Cookie settings",
+    "statusAccepted": "Current choice: analytics accepted.",
+    "statusRejected": "Current choice: analytics rejected."
+  },
+  "legal": {
+    "nav": "Legal information",
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy",
+    "accessibility": "Accessibility statement",
+    "draft": "Draft prepared from how the site actually works. The final wording is decided by the site owner and counsel; this is not legal advice.",
+    "updated": "Last updated",
+    "back": "Back to the book"
+  },
+  "footer": {
+    "copyright": "© {year} Sebastiano Nicoras. All rights reserved. All images are property of Sebastiano Nicoras and may not be copied, reproduced, or used without written permission."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "back": "Back to the book"
+  },
+  "home": {
+    "cover": "Cover photo",
+    "board": "Book sections",
+    "metric": "Metric",
+    "imperial": "Imperial",
+    "digitals": "Digitals · front, profile, back",
+    "kicker": "Agencies · castings · brands",
+    "book": "Book",
+    "copy": "Copy email",
+    "copied": "Copied",
+    "enquiry": "Send an enquiry",
+    "role": "Men's fashion model based in Cluj-Napoca, Romania. Available for international bookings."
+  }
+}

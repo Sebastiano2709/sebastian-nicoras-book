@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "siteName": "Sebastiano Nicoras",
+    "title": "Sebastiano Nicoras — Model de modă masculină",
+    "description": "Book oficial de model. Înălțime 181 cm, piept 99, talie 81, pantofi 42. Cu baza în Cluj-Napoca, România. Disponibil pentru booking internațional.",
+    "ogAlt": "Sebastiano Nicoras, model de modă masculină, în smoching negru, în studio",
+    "jobTitle": "Model de modă masculină"
+  },
+  "nav": {
+    "portfolio": "Portofoliu",
+    "polaroids": "Polaroiduri",
+    "measurements": "Măsuri",
+    "contact": "Contact",
+    "menu": "Meniu",
+    "close": "Închide",
+    "primary": "Navigație principală",
+    "skip": "Sari la conținut",
+    "language": "English",
+    "languageName": "English version",
+    "booking": "Booking",
+    "compCard": "Comp card",
+    "instagram": "Instagram",
+    "enquiry": "Cerere de booking",
+    "closeMenu": "Închide meniul",
+    "where": "Cluj-Napoca, România · Booking internațional",
+    "home": "Sebastiano Nicoras — acasă"
+  },
+  "hero": {
+    "role": "Model de modă masculină",
+    "location": "Cu baza în Cluj-Napoca, România",
+    "availability": "Disponibil pentru booking internațional",
+    "cta": "Trimite o cerere de booking",
+    "compCard": "Descarcă comp card-ul"
+  },
+  "measurements": {
+    "title": "Măsuri",
+    "height": "Înălțime",
+    "weight": "Greutate",
+    "chest": "Piept",
+    "waist": "Talie",
+    "hips": "Șold",
+    "suit": "Costum",
+    "shoes": "Pantofi",
+    "hair": "Păr",
+    "eyes": "Ochi",
+    "hairValue": "Negru",
+    "eyesValue": "Căprui"
+  },
+  "sections": {
+    "portfolio": "Portofoliu",
+    "polaroids": "Polaroiduri"
+  },
+  "gallery": {
+    "view": "Vezi mai mare:",
+    "dialog": "Vizualizare imagine",
+    "close": "Închide",
+    "previous": "Imaginea anterioară",
+    "next": "Imaginea următoare",
+    "of": "din"
+  },
+  "book": {
+    "contactTitle": "Contact",
+    "contactLead": "Pentru booking, castinguri și colaborări, trimite o cerere sau scrie-mi direct.",
+    "email": "Email",
+    "instagram": "Instagram",
+    "compCard": "Comp card",
+    "compCardFile": "PDF, 2 pagini"
+  },
+  "contact": {
+    "title": "Cerere de booking",
+    "intro": "Trimite detaliile proiectului. Îmi poți scrie și direct la",
+    "name": "Nume",
+    "email": "Email",
+    "company": "Agenție sau companie",
+    "optional": "opțional",
+    "message": "Mesaj",
+    "messageHint": "Proiectul, datele și locația mă ajută să răspund cu disponibilitatea.",
+    "submit": "Trimite cererea",
+    "sending": "Se trimite…",
+    "success": "Mulțumesc — cererea a fost primită.",
+    "successBack": "Înapoi la book",
+    "errorSummary": "Verifică câmpurile marcate.",
+    "unavailable": "Momentan nu pot fi primite cereri. Încearcă din nou în câteva minute sau scrie la adresa de email de mai sus.",
+    "limited": "Prea multe mesaje. Încearcă mai târziu.",
+    "privacy": "Datele tale sunt folosite doar pentru a răspunde acestei cereri.",
+    "privacyLink": "Politica de confidențialitate",
+    "errors": {
+      "name": "Scrie-ți numele.",
+      "email": "Scrie o adresă de email validă.",
+      "company": "Folosește cel mult 120 de caractere.",
+      "message": "Scrie cel puțin 10 caractere."
+    }
+  },
+  "consent": {
+    "region": "Consimțământ cookies",
+    "title": "Cookies de analiză",
+    "text": "Cu permisiunea ta, acest site folosește Google Analytics pentru a număra vizitele. Cookie-urile lui sunt setate doar dacă accepți; poți schimba alegerea oricând.",
+    "accept": "Accept analiza",
+    "reject": "Refuz",
+    "policy": "Politica de cookies",
+    "settings": "Setări cookies",
+    "statusAccepted": "Alegerea actuală: analiză acceptată.",
+    "statusRejected": "Alegerea actuală: analiză refuzată."
+  },
+  "legal": {
+    "nav": "Informații legale",
+    "privacy": "Politica de confidențialitate",
+    "cookies": "Politica de cookies",
+    "accessibility": "Declarație de accesibilitate",
+    "draft": "Schiță pregătită pe baza felului în care funcționează efectiv site-ul. Textul final îl stabilesc proprietarul site-ului și un jurist; nu este consultanță juridică.",
+    "updated": "Ultima actualizare",
+    "back": "Înapoi la book"
+  },
+  "footer": {
+    "copyright": "© {year} Sebastiano Nicoras. All rights reserved. All images are property of Sebastiano Nicoras and may not be copied, reproduced, or used without written permission."
+  },
+  "notFound": {
+    "title": "Pagina nu există",
+    "back": "Înapoi la book"
+  },
+  "home": {
+    "cover": "Fotografia de copertă",
+    "board": "Secțiunile book-ului",
+    "metric": "Metric",
+    "imperial": "Imperial",
+    "digitals": "Digitals · față, profil, spate",
+    "kicker": "Agenții · castinguri · branduri",
+    "book": "Booking",
+    "copy": "Copiază emailul",
+    "copied": "Copiat",
+    "enquiry": "Trimite o cerere",
+    "role": "Model de modă masculină cu baza în Cluj-Napoca, România. Disponibil pentru booking internațional."
+  }
+}
